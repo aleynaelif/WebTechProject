@@ -27,7 +27,7 @@
 
 <body>
 
-    <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
+	<nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
 		<div class="container"> <!--- içeriği ortalar -->
 			<a href="/" class="navbar-brand">
 				Aleyna Elif ÖZKAN
@@ -79,13 +79,12 @@
 		</div>
 	</nav>
 
-    <header>
+	<header>
 
 		<div class="jumbotron " style="background-color: rgb(239, 255, 218)">
 			<div class="text-center">
-
                 <h1 class="display-4 font-italic">
-                    İletişim
+                    Giriş Yap
                 </h1>
 			</div>
 		</div>
@@ -96,76 +95,48 @@
 
 		<div class="container">
 			
-			<form action="git.html" name="Form" onsubmit="return control()">
+			<div class="row">
 
-				<div class="form-group">
-					<label for="name">İsim</label>
-					<input type="text" name="name" class="form-control" placeholder="İsminizi giriniz">							
-					<small class="form-text text-muted">Zorunlu alan</small>
-				</div>
+            <div class="container">
+			
+			<form action="giris.php" method="POST">
 
 				<div class="form-group">
 					<label for="email">E-mail</label>
-					<input type="text" name="email" class="form-control" placeholder="E-mailinizi giriniz">
-					<small class="form-text text-muted">Zorunlu alan</small>
+					<input type="text" name="email" class="form-control" placeholder="E-mail 'giriniz" required="required">
 				</div>
 
 				<div class="form-group">
-					<label for="message">Mesaj</label>
-					<textarea name="message" id="message" rows="5" class="form-control"></textarea>
+					<label for="password">Şifre</label>
+					<input type="password" name="password" class="form-control" placeholder="Şifre giriniz" required="required">
 				</div>
 
-				<button class="text-light bg-dark" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
-
-				<button class="text-light bg-dark" type="submit" id="sub">Gönder</button>
+				<button class="btn btn btn-info" type="submit">Gönder</button>
 
 				<br><br><br>
 
 			</form>
 
 		</div>
+			</div>
+		</div>
 
 	</main>
 
 
 
-	<footer class="py-2 bg-dark text-white text-center">
-		Web-Teknolojileri-Projesi © Aleyna Elif ÖZKAN 2021
-	</footer>
+    <div class="footer">
+        <footer class="py-2 bg-dark text-white text-center">
+            Web-Teknolojileri-Projesi © Aleyna Elif ÖZKAN 2021
+        </footer>
+    </div>
+
 
 
 	<!-- BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-	<!-- JAVASCRIPT -->
-    <script>
-		function control()
-		{
-			var x = document.forms["Form"]["name"].value;
-			if (x == "") 
-			{
-				alert("İsim boş bırakılamaz");
-				return false;
-			}
-
-			var y = document.forms["Form"]["email"].value;
-			if (y == "") 
-			{
-				alert("Mail Kısmı Boş bırakılamaz");
-				return false;
-			}
-
-			var forMail = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
-			if (forMail.test(y) == false) 
-			{
-				alert("Geçersiz mail adresi!");
-				return false;
-			}
-		}	
-
-    </script>	
 
 </body>
 
