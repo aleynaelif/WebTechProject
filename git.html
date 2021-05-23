@@ -112,7 +112,9 @@
 
   				    var name = getParameterByName('name');
   				    var email = getParameterByName('email');
-  				    var message = getParameterByName('message');
+					var c = getParameterByName('cinsiyet');
+					var sehir = getParameterByName('sehir');
+					var hobi = getParameterByName('hobi');
 
 				</script>
 
@@ -142,9 +144,30 @@
                         </tr>
 
                         <tr>
-                            <td class="text-center">Mesajınız</td>
+                            <td class="text-center">Cinsiyetiniz</td>
                             <td>
-                                <script >document.write(message);
+                                <script >
+									if(c == "on")
+										document.write("Kadın");
+									else if( c== "off")
+										document.write("Erkek");
+
+                                </script>
+                            </td>
+                        </tr>
+
+						<tr>
+                            <td class="text-center">Şehriniz</td>
+                            <td>
+                                <script >document.write(sehir);
+                                </script>
+                            </td>
+                        </tr>
+
+						<tr>
+                            <td class="text-center">Hobileriniz</td>
+                            <td>
+                                <script >document.write(hobi);
                                 </script>
                             </td>
                         </tr>

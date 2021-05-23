@@ -110,10 +110,62 @@
 					<small class="form-text text-muted">Zorunlu alan</small>
 				</div>
 
+
 				<div class="form-group">
-					<label for="message">Mesaj</label>
-					<textarea name="message" id="message" rows="5" class="form-control"></textarea>
-				</div>
+					<label for="cinsiyet">Cinsiyetiniz</label>
+					<p>
+						Erkek <input type="radio" name="cinsiyet" id="cinsiyet">
+						<br>
+						Kadın <input type="radio" name="cinsiyet" id="cinsiyet>
+						<br>
+						Belirtmek İstemiyorum <input type="radio" name="cinsiyet">
+						<br>
+					</p>
+				</div>	
+
+
+				<div class="form-group">
+					<label for="sehir">Şehir Seçiniz</label>
+						<p>
+							<select name="sehir">
+								<option>Kocaeli</option>
+								<option>İstanbul</option>
+								<option>Ankara</option>
+								<option>Sakarya</option>
+								<option>Artvin</option>
+								<option>Sivas</option>
+								<option>Yalova</option>
+								<option>Diğer</option>
+							</select>
+						</p>
+				</div>	
+				
+
+
+				<div class="form-group">
+					<label for="hobi">Sizin De İlgi Duyduğunuz Alanları Seçiniz</label>
+					<p>
+						<input type="checkbox" name="hobi">
+						Yemek yapmak <br>
+						<input type="checkbox" name="hobi">
+						Kitap okumak <br>
+						 <input type="checkbox" name="hobi">
+						 Ukulele çalmak <br>
+						 <input type="checkbox" name="hobi">
+						 Tenis oynamak <br>
+						 <input type="checkbox" name="hobi">
+						 Org çalmak <br>
+						 <input type="checkbox" name="hobi">
+						 Günlük tutmak <br>
+						 <input type="checkbox" name="hobi">
+						 Dizi izlemek <br>
+						 <input type="checkbox" name="hobi">
+						 Dijital çizim yapmak <br>
+						 <input type="checkbox" name="hobi">
+						 Müzik dinlemek <br> <br> <br>
+					</p>
+				</div>	
+
 
 				<button class="text-light bg-dark" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
 

@@ -103,7 +103,7 @@
 
 				<div class="form-group">
 					<label for="email">E-mail</label>
-					<input type="text" name="email" class="form-control" placeholder="E-mail 'giriniz" required="required">
+					<input type="text" name="email" class="form-control" placeholder="E-mail giriniz" required="required">
 				</div>
 
 				<div class="form-group">
@@ -111,7 +111,7 @@
 					<input type="password" name="password" class="form-control" placeholder="Şifre giriniz" required="required">
 				</div>
 
-				<button class="btn btn btn-info" type="submit">Gönder</button>
+				<button class="btn btn btn-dark" type="submit">Gönder</button>
 
 				<br><br><br>
 
